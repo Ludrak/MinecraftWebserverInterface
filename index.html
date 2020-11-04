@@ -3,19 +3,21 @@
     <head>
         <title>Minecraft web server login</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet", href="styles/colors-theme.css">
         <link rel="stylesheet", href="styles/login.css">
         <script src="js/submit.js"></script>
     </head>
 
     <body>
-        <form action="/login" class="login-container" id="form" method="post">
+        <form action="./server.html" class="login-container" id="form" method="post">
             <h1>Login to Minecraft web console</h1>
-            <h4>Username :</h4>
+            <label>Username :</label>
             <input type="text" id="login-username">
-            <h4>Password :</h4>
+            <label>Password :</label>
             <input type="password" id="login-password">
             <h5>Invalid Username or Password.</h5>
-            <a href="javascript:submit()">Submit</a>
+            <input type="submit" value="Submit">
+           <!-- <a href="javascript:submit()">Submit</a>-->
         </form>
     </body>
 </html>

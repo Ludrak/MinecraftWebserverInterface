@@ -3,19 +3,36 @@
     <head>
         <title>Minecraft Web Server Interface</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/colors-theme.css">
+        <link rel="stylesheet" href="styles/server.css">
     </head>
 
     <body>
         <div class="title-container">
             <h1>Minecraft Web Server Interface</h1>
+            <h4>Welcome server admin !<br>This is the place where you will manage your server, take care of what you are doing in here.</h4>
+            <img src="assets/cube.png">
+        </div>
+
+        <div class="server-container">
+            <div>
+                <h1>MyMcServer.net (<strong>188.43.124.67</strong>)</h1>
+                <h4>Status : <strong>Running</strong></h4>
+                <h4>Players : 12/30</h4>
+                <h4>Version: 1.16.3</h4>
+            </div>
+            <aside class="server-action-container">
+                <input type="button" value="Reload" class="server-action-button">
+                <input type="button" value="Restart" class="server-action-button">
+                <input type="button" value="Stop" class="server-action-button">
+            </aside>
         </div>
 
         <div class="console-container">
             <h1>Console</h1>
             <p>$> echo Hello World !<br>ERROR: SEGF on adress 0x777fdsfds89f by 0x777dsad999da</p>
             <div id="console-input">
-                <h5>$></h5>
+                <h5>></h5>
                 <input type="text">
             <div>
         </div>
